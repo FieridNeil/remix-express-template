@@ -13,6 +13,7 @@ const appRouter = router({
 
 app.use("/trpc", trpc.createExpressMiddleware({ router: appRouter }));
 
+// eslint-disable-next-line no-console
 app.listen(PORT, () => console.log("Listening on", PORT));
 
 export type AppRouter = typeof appRouter;

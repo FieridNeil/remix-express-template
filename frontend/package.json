@@ -6,7 +6,9 @@
   "scripts": {
     "build": "remix build",
     "dev": "remix dev --manual",
-    "start": "remix-serve ./build/index.js"
+    "start": "remix-serve ./build/index.js",
+    "test": "bun test",
+    "lint": "eslint app"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
