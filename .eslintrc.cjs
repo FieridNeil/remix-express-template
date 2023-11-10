@@ -4,7 +4,7 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint"],
   root: true,
-  ignorePatterns: [".eslintrc.cjs"],
+  ignorePatterns: [".eslintrc.cjs", "commitlint.config.js"],
   rules: {
     "@typescript-eslint/semi": ["error", "always"],
     "@typescript-eslint/comma-dangle": ["off", "never"],

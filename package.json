@@ -1,0 +1,17 @@
+{
+  "name": "remix-express",
+  "scripts": {
+    "lint": "eslint backend/src && eslint frontend/app",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.0",
+    "@commitlint/config-conventional": "^18.4.0",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "bun-types": "latest",
+    "eslint": "^8.53.0",
+    "husky": "^8.0.3",
+    "typescript": "^5.2.2"
+  }
+}

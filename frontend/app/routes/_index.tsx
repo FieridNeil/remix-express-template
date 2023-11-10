@@ -19,6 +19,7 @@ const trpc = createTRPCProxyClient<AppRouter>({
 });
 
 export const loader = async () => {
+  // eslint-disable-next-line no-console
   console.log(await trpc.greeting.query());
   return null;
 };
