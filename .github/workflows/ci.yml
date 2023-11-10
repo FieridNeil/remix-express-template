@@ -5,11 +5,45 @@ on:
     branches: [ "dev" ]
 
 jobs:
-  lint:
-    name: linting
+  lint-frontend:
+    name: lint-frontend
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - uses: oven-sh/setup-bun@v1
+    - run: cd frontend
     - run: bun install
     - run: bun run lint
+
+  test-frontend:
+    name: test-frontend
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: oven-sh/setup-bun@v1
+    - run: cd frontend
+    - run: bun install
+    - run: bun run test
+    
+  lint-backend:
+    name: lint-backend
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: oven-sh/setup-bun@v1
+    - run: cd backend
+    - run: bun install
+    - run: bun run lint
+
+  test-backend:
+    name: test-backend
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: oven-sh/setup-bun@v1
+    - run: cd backend
+    - run: bun install
+    - run: bun run test
+
+
+  
