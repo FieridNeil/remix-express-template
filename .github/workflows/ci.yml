@@ -14,7 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: oven-sh/setup-bun@v1
-    - run: cd frontend
     - run: bun install
     - run: bun run lint
 
@@ -27,7 +26,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: oven-sh/setup-bun@v1
-    - run: cd frontend
     - run: bun install
     - run: bun run test
     
@@ -40,7 +38,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: oven-sh/setup-bun@v1
-    - run: cd backend
     - run: bun install
     - run: bun run lint
 
@@ -53,7 +50,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: oven-sh/setup-bun@v1
-    - run: cd backend
     - run: bun install
     - run: bun run test
 
